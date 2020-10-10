@@ -1,0 +1,62 @@
+*
+  B. Create a simple cashier program. 
+*/
+#include <stdio.h>
+int main(){
+    int n,num,prod;    
+    printf("===========================\n"
+           "           LIST           \n"
+           "===========================\n"
+           "Name of Product\t||Price    \n\n"
+           "1.Gatorade    \t||Rp.50php   \n"
+           "2.Cobra    \t||Rp.20php   \n"
+           "3.Vitamilk    \t||Rp.30php   \n"
+           "4.Redhorse    \t||Rp.100php   \n\n"    
+           "Enter what you want to buy : ");
+            scanf("%d",&num);           
+    switch (num){
+        case 1:
+            printf("Enter payment : ");
+            scanf("%d",&n);
+            if(n>=50){
+                prod=n-50;
+                printf("Change : %dphp",prod);
+            }
+            else
+                printf("Invalid Payment");
+                break;
+         case 2:
+            printf("Enter payment : ");
+            scanf("%d",&n);
+            if(n>=20){
+                prod=n-20;
+                printf("Change : %dphp",prod);
+            }
+            else
+                printf("Invalid Payment");
+                break;
+         case 3:
+            printf("Enter payment : ");
+            scanf("%d",&n);
+            if(n>=30){
+                prod=n-30;
+                printf("Change : %dphp",prod);
+            }
+            else
+                printf("Invalid Payment");
+                break;
+         case 4:
+            printf("Enter payment : ");
+            scanf("%d",&n);
+            if(n>=100){
+                prod=n-100;
+                printf("Change : %dphp",prod);
+            }
+            else
+                printf("Invalid Payment");
+                break;
+    }      
+    printf("\n\nProgrammed by: Earl Jheed Vallejos");
+
+    return 0;
+}
